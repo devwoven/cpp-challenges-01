@@ -21,27 +21,3 @@ int main() {
     return 0;
 }
 ```
-
----
-
-このプログラムは整数を入力すると適切に動作しますが、小数を入力すると正しい結果になりません。`num1`、`num2`、`num3`がすべて`int`型であることが原因です。これらの変数を`float`型に変更する必要があります。
-
-```cpp
-#include <iostream>
-
-int main() {
-    float num1;
-    float num2;
-    float num3;
-    float average;
-
-    std::cout << "Enter three numbers: ";
-    std::cin >> num1 >> num2 >> num3;
-
-    average = (num1 + num2 + num3) / 3;
-
-    std::cout << "Average is: " << average << std::endl;
-
-    return 0;
-}
-```
